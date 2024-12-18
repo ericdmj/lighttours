@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://app.carto.com/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://app.carto.com/favicon/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightTour</title>
+  <body>
+    <div id="app">
+      <div id="map"></div>
+      <canvas id="deck-canvas"></canvas>
+      <div id="story-card">
+        <p class="overline">Excited that you're checking out . . .</p>
+        <h2>✨ LightTours ✨</h2>
+        <p>This app provides a way for you to see houses, parks, and other sites that have particularly impressive light displays this holiday season. Each location has a popup that details of those displays including number of lights and other notable features.</p>
+        <p>While &ldquo;tacky lights displays&rdquo; are perhaps the most classic example of the genre, and will certainly be included on the app, users will also be able to switch to display &ldquo;classy lights displays&rdquo; in order to see what might be termed more <em>elegant</em> examples.</p>
+        <div class= "layer-controls">
+          <p class="overline">Select a category:</p>
+          <div class="container">
+            <div>
+              <div class="category-container">
+                <label for="tacky">
+                  <input type="checkbox" id="tacky" value="Tacky" class="categories" checked>
+                  <img src="./markers/Tacky.svg" alt="Tacky"> Tacky
+                </label>
+              </div>
+            </div>
+            <div>
+              <div class="category-container">
+                <label for="classy">
+                  <input type="checkbox" id="classy"  value="Classy" class="categories">
+                  <img src="./markers/Classy.svg" alt="Classy"> Classy
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progress-container">
+          <progress class="pure-material-progress-linear" id="loader"/>
+        </div>
+        <div id="add-address">
+          <form action="http://localhost:3000/submit" method="POST">
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address" required><br>
+            <label for="DisplayType">Display Type:</label>
+            <input type="text" id="DisplayType" name="DisplayType" required><br>
+            <label for="LocationType">Location Type:</label>
+            <input type="text" id="LocationType" name="LocationType"><br>
+            <label for="LightCount">Light Count:</label>
+            <input type="number" id="LightCount" name="LightCount"><br>
+            <label for="Inflatables">Inflatables:</label>
+            <input type="radio" id="Infltrue" name="Inflatables" value="true">
+            <label for="Infltrue">Yes</label>
+            <input type="radio" id="Inflfalse" name="Inflatables" value="false">
+            <label for="Inflfalse">No</label><br>
+            <label for="Animated">Animated:</label>
+            <input type="radio" id="Animtrue" name="Animated" value="true">
+            <label for="Animtrue">Yes</label>
+            <input type="radio" id="Animfalse" name="Animated" value="false">
+            <label for="Animfalse">No</label><br>
+            <label for="Music">Music:</label>
+            <input type="radio" id="Musitrue" name="Music" value="true">
+            <label for="Musitrue">Yes</label>
+            <input type="radio" id="Musifalse" name="Music" value="false">
+            <label for="Musifalse">No</label><br>
+            <label for="Traditional">Traditional decor:</label>
+            <input type="radio" id="Tradtrue" name="Traditional" value="true">
+            <label for="Tradtrue">Yes</label>
+            <input type="radio" id="Tradfalse" name="Traditional" value="false">
+            <label for="Tradfalse">No</label><br>
+            <label for="Notes">Other Notes:</label>
+            <input type="text" id="Notes" name="Notes"><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <p class="caption">Created by: <em>Eric Johnson, GEOG 576, December 2024</em></p>
+      </div>
+    </div>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
