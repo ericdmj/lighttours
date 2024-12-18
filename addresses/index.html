@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LightTour</title>
+  <body>
+    <div id="test">
+        <form id="dataForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+          
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+          
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" name="weight"><br><br>
+          
+            <label for="isMagic">Is Magic:</label>
+            <input type="checkbox" id="isMagic" name="isMagic"><br><br>
+          
+            <button type="submit">Submit</button>
+          </form>
+    </div>
+    <script>
+      document.getElementById('dataForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+    
+        const formData = {
+          rows: [
+            {
+              json: {
+                Name: document.getElementById('name').value,
+                Age: parseInt(document.getElementById('age').value, 10),
+                Weight: parseInt(document.getElementById('weight').value, 10) || null,
+                IsMagic: document.getElementById('isMagic').checked
+              }
+            }
+          ]
+        };
+    
+        try {
+          const response = await fetch('/bigquery/insert', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+          });
+    
+          if (response.ok) {
+            alert('Data submitted successfully!');
+          } else {
+            console.error('Failed to submit data:', await response.text());
+          }
+        } catch (error) {
+          console.error('Error submitting form:', error);
+        }
+      });
+    </script>
+  </body>
+</html>

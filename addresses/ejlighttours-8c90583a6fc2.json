@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ejlighttours",
+  "private_key_id": "8c90583a6fc2415cba1a1fb894c3011b88444ce6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBTEsq2q4AFBPq\nTG3EBt5fzkxKYstRparVmkaynbRQXlOl6TBtV9TaweXMeV0s2OYSoyRnw4qwhV0U\nRi48e8ahC656Y8qv/aMo9qEVdt2wh/LldQMzl/4sAm9F8TlvLtgbgm6YX6zVc7Rr\njRQ6sCpArFzCJea2ybXirEJ3bMYpBASfHVaAQPaUzmrkSJ/cRUIQIJ0K/e+7im7c\n5kLkBOo3TkXDLQ4dogAt2ql2kqB5/l0ccEZr/PUierEJySTPJpwHbOofz8oXCJpA\nS1IKDzke3hCPH7C6YvAKJemXrYVtAf8zdnNbyEbVSpvVGM1AugXcNKxZBUIwep+C\nGK0nr+OZAgMBAAECggEAEhLP4W8mf0/hR9JDHiXVQ4h+xiLEJ3txxHyjGR7ZRf13\n3Ua3NjYU6ypfkfWUEnYqVvpFlGUqcdRabmOcfZ/GI/c7ZmqvwDJbP+CFkcP2OQQR\nIEbHWJrg010b6eKC8AQlhTb2H82sU534s+iySEWCAd+L4cRY9OTZ2pqoMVHsmleB\n+9YYu27OslarhTf+0uS9FcFyh87WhpmslJdb1TQaygUdOSmJy3C7V9OQWHF4o2Z8\nVd9EPQmxCAypm9L0q/LLGhv9pFldOIHlOSOtJOofKIGcDb1Hoh0307aaT6o/my0H\nUa5rPEwYJA2gcK6TjSgMGw5M9XOqW+SJZiExp6FG4QKBgQDhV/PTQzqNt8b2tTLX\nB01CaN03wMXk8YzyzlYvSN967XFXE5DxJP+9XSRo1xPIQT3ZSU4tHWq7Yf8EMuCj\nn5qZwYXqv53cdoR5l3KKUmmHZWZuUUt5gyt/LvVQZAXziRCROMHAuusX/FAUt91f\nZ6p1bQjGwvHX9zA9ioflw08RiQKBgQDbmEpArPnJmk5ds7drJrlazQn2BCdWlfgh\nK4cA8IKRF2vPf4tyJTLRq3te6+84ximbIcOVd2PxrRx9Xuk8ZKhXlgmZdOU2Rb1s\n/tQRgKLxwMm723NhrRjXbrU6viy5J1WfNHaZeDDKyPzYwTeeHJbmmxVLdbF/Ruy6\nHCM3gisNkQKBgQDMOYzFw6EWfR75yiBoVrrDXAxZEgGHyw7FoxDiy7WWUAkvNJFg\nqvqHoRl1Vq8cB1zJRzFtm8J2TorzQDTstaJEhOocZUrpWhQXqpTpHWV8iv55Ln4r\ngyBxpJo5IF1waKE2K+0VAZI867OcA0LCy03mHEoe8OCDrQfwTlN5fTd0mQKBgQC3\nkXIY6MCSwDRcbjyZDTELb7Ww+73qysk26U0dAvES2xJbzhJC5Ee8MG6cZfx/aGAl\nd68pBjn9MKpNP4cX3kk/loQFzUtC+D+mmsuqqe8Myw2YxZWJhIrspHZJWerHCNOx\nl8jA+FFJY4TCqZqVyO54bhH6F7O+YwrHdXgXEfBtkQKBgQDSznQqNBmLGkTbQr8m\n9NtM5rDFtmppPYgx6HoqGl79juUFkLqhz7tR08vAR1+5SDvVc5P3oZRG8anPV1+N\nxdlaIjM/SW5nGBV9/dP0pocTQwC8CQJF2ozFX0epnc0h8JTKonkrwif5vLZIJqmO\nUsNVU0NLuBOvq6D5s+n55Rxw+g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "lighttours-service@ejlighttours.iam.gserviceaccount.com",
+  "client_id": "117915037340544730613",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lighttours-service%40ejlighttours.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
