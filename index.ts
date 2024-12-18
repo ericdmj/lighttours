@@ -10,6 +10,7 @@ const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 const accessToken = import.meta.env.VITE_API_ACCESS_TOKEN;
 const connectionName = 'lighttours-factsmith'
 const cartoConfig = {apiBaseUrl, accessToken, connectionName};
+const port = process.env.PORT || 4000;
 
 const INITIAL_VIEW_STATE = {
   latitude: 37.562, 
